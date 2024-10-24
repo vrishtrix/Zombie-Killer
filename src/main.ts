@@ -1,5 +1,6 @@
 import { Color, type DefaultLoader, DisplayMode, Engine } from 'excalibur';
 
+import { Hero } from './characters/hero';
 import { loader } from './resources';
 
 class Game extends Engine {
@@ -11,6 +12,13 @@ class Game extends Engine {
 	}
 
 	start(loader: DefaultLoader) {
+		const hero = new Hero(
+			this.screen.halfDrawWidth,
+			this.screen.halfDrawHeight,
+		);
+
+		this.add(hero);
+
 		return super.start(loader);
 	}
 }
