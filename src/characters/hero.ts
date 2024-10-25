@@ -17,11 +17,15 @@ const idleSpriteSheet = SpriteSheet.fromImageSource({
 		spriteWidth: 16,
 		spriteHeight: 32,
 	},
+	spacing: {
+		originOffset: { x: 16, y: 16 },
+		margin: { x: 32, y: 32 },
+	},
 });
 
 const idleDownAnim = Animation.fromSpriteSheet(
 	idleSpriteSheet,
-	range(0, 7),
+	range(0, 6),
 	200,
 );
 
