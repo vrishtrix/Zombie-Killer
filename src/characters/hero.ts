@@ -12,8 +12,8 @@ import { heroIdleLoadable } from '../resources';
 const idleSpriteSheet = SpriteSheet.fromImageSource({
 	image: heroIdleLoadable,
 	grid: {
-		rows: 8,
-		columns: 6,
+		rows: 6,
+		columns: 8,
 		spriteWidth: 16,
 		spriteHeight: 32,
 	},
@@ -25,7 +25,7 @@ const idleSpriteSheet = SpriteSheet.fromImageSource({
 
 const idleDownAnim = Animation.fromSpriteSheet(
 	idleSpriteSheet,
-	range(0, 6),
+	range(0, 7),
 	200,
 );
 
